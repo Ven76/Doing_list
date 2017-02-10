@@ -1,0 +1,7 @@
+<%= link_to 'Add Item', new_list_path %>
+<h2> To Do...</h2>
+<% @lists.each do |i| %>
+<div><%= i.item %>
+<%= link_to 'Show', list_path(i) %></div>
+
+<% end %>
